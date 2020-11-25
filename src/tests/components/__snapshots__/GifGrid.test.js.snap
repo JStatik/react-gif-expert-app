@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente GifGrid Debe mostrar el componente sin imagen alguna y con el mensaje "Cargando..." 1`] = `
+<Fragment>
+  <h3
+    className="centrado animate__animated animate__jackInTheBox"
+  >
+    Naruto Shippuden
+  </h3>
+  <p
+    className="centrado"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en el componente GifGrid Debe mostrar una imagen en el componente correctamente y ocultar el mensaje "Cargando..."; adicionalmente verificamos que el parrafo este vacio, que el Componente GifGridItem exista y que la cantidad de componentes GifGridItem sea los mismos que los gifs obtenidos por useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="centrado animate__animated animate__jackInTheBox"
+  >
+    Naruto Shippuden
+  </h3>
+  <p
+    className="centrado"
+  />
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="abc123"
+      key="abc123"
+      title="Naruto"
+      url="https://localhost/naruto+shippuden/gif"
+    />
+  </div>
+</Fragment>
+`;
